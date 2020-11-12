@@ -1,7 +1,7 @@
 import 'dart:async';
 
-import 'package:chickywok/widgets/app-navigation.dart';
-import 'package:chickywok/widgets/bottom-navigation.dart';
+import 'package:Chickywok/widgets/app-navigation.dart';
+import 'package:Chickywok/widgets/bottom-navigation.dart';
 import 'package:flutter/material.dart';
 import 'package:geolocator/geolocator.dart';
 import 'package:google_maps_flutter/google_maps_flutter.dart';

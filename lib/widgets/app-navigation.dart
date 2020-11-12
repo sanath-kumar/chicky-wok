@@ -1,4 +1,4 @@
-import 'package:chickywok/providers/cart-provider.dart';
+import 'package:Chickywok/providers/cart-provider.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:shimmer/shimmer.dart';

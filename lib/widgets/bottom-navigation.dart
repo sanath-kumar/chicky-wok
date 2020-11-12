@@ -1,5 +1,5 @@
 import 'package:badges/badges.dart';
-import 'package:chickywok/providers/cart-provider.dart';
+import 'package:Chickywok/providers/cart-provider.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 

@@ -1,7 +1,7 @@
 import 'dart:async';
 
-import 'package:chickywok/models/user.dart';
-import 'package:chickywok/providers/cart-provider.dart';
+import 'package:Chickywok/models/user.dart';
+import 'package:Chickywok/providers/cart-provider.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:shared_preferences/shared_preferences.dart';

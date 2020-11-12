@@ -1,6 +1,6 @@
 import 'dart:convert';
 
-import 'package:chickywok/helpers/config.dart';
+import 'package:Chickywok/helpers/config.dart';
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
 import 'package:progress_dialog/progress_dialog.dart';

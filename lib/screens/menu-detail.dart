@@ -1,7 +1,7 @@
-import 'package:chickywok/models/cart-items.dart';
-import 'package:chickywok/providers/cart-provider.dart';
-import 'package:chickywok/widgets/app-navigation.dart';
-import 'package:chickywok/widgets/bottom-navigation.dart';
+import 'package:Chickywok/models/cart-items.dart';
+import 'package:Chickywok/providers/cart-provider.dart';
+import 'package:Chickywok/widgets/app-navigation.dart';
+import 'package:Chickywok/widgets/bottom-navigation.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:shimmer/shimmer.dart';

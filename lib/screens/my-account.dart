@@ -1,10 +1,10 @@
 import 'dart:convert';
-import 'package:chickywok/helpers/config.dart';
-import 'package:chickywok/models/my-orders.dart';
-import 'package:chickywok/models/user.dart';
-import 'package:chickywok/providers/cart-provider.dart';
-import 'package:chickywok/widgets/app-navigation.dart';
-import 'package:chickywok/widgets/bottom-navigation.dart';
+import 'package:Chickywok/helpers/config.dart';
+import 'package:Chickywok/models/my-orders.dart';
+import 'package:Chickywok/models/user.dart';
+import 'package:Chickywok/providers/cart-provider.dart';
+import 'package:Chickywok/widgets/app-navigation.dart';
+import 'package:Chickywok/widgets/bottom-navigation.dart';
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
 import 'package:provider/provider.dart';

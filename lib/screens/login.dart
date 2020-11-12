@@ -1,9 +1,9 @@
 import 'dart:convert';
 
 import 'package:badges/badges.dart';
-import 'package:chickywok/helpers/Prefs.dart';
-import 'package:chickywok/helpers/config.dart';
-import 'package:chickywok/models/user.dart';
+import 'package:Chickywok/helpers/Prefs.dart';
+import 'package:Chickywok/helpers/config.dart';
+import 'package:Chickywok/models/user.dart';
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
 import 'package:progress_dialog/progress_dialog.dart';

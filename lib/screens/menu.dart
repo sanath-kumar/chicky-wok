@@ -1,12 +1,12 @@
 import 'dart:convert';
 
-import 'package:chickywok/helpers/config.dart';
-import 'package:chickywok/models/menu-items.dart';
-import 'package:chickywok/providers/menu-provider.dart';
-import 'package:chickywok/widgets/app-navigation.dart';
-import 'package:chickywok/widgets/bottom-navigation.dart';
-import 'package:chickywok/widgets/carousel.dart';
-import 'package:chickywok/widgets/menu-list.dart';
+import 'package:Chickywok/helpers/config.dart';
+import 'package:Chickywok/models/menu-items.dart';
+import 'package:Chickywok/providers/menu-provider.dart';
+import 'package:Chickywok/widgets/app-navigation.dart';
+import 'package:Chickywok/widgets/bottom-navigation.dart';
+import 'package:Chickywok/widgets/carousel.dart';
+import 'package:Chickywok/widgets/menu-list.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:http/http.dart' as http;

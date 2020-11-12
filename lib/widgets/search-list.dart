@@ -1,5 +1,5 @@
-import 'package:chickywok/providers/menu-provider.dart';
-import 'package:chickywok/screens/menu-detail.dart';
+import 'package:Chickywok/providers/menu-provider.dart';
+import 'package:Chickywok/screens/menu-detail.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 

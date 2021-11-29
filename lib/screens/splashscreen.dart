@@ -1,7 +1,7 @@
 import 'dart:async';
 
-import 'package:chickywok/models/user.dart';
-import 'package:chickywok/providers/cart-provider.dart';
+import 'package:Chickywok/models/user.dart';
+import 'package:Chickywok/providers/cart-provider.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:shared_preferences/shared_preferences.dart';
@@ -29,11 +29,11 @@ class _SplashScreenState extends State<SplashScreen> {
   Widget build(BuildContext context) {
     return Container(
       padding: EdgeInsets.only(left: 50,right: 50),
-      color: Colors.red,
+      color: Colors.red[900],
       child:
       Shimmer.fromColors(
-          baseColor:Colors.white,
-          highlightColor: Colors.red[100],
+          baseColor:Colors.blueGrey[200],
+          highlightColor: Colors.blueGrey[400],
           child: SizedBox(width:100,child: Image.asset("assets/logo-transparant.png",width: 200,))),
       );
   }
@@ -43,7 +43,7 @@ class _SplashScreenState extends State<SplashScreen> {
     String userDetails = prefs.getString("USER");
     print(userDetails);
     if(userDetails == null || userDetails == ""){
-      Navigator.pushNamed(context, "/welcome");
+      Navigator.pushNamed(context, "/home");
     }else{
       print("Logged in");
       Provider.of<CartProvider>(context,listen: false).hydrateCartFromPrefs();

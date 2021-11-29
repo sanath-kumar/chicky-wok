@@ -1,6 +1,6 @@
 import 'dart:convert';
 
-import 'package:chickywok/helpers/config.dart';
+import 'package:Chickywok/helpers/config.dart';
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
 import 'package:progress_dialog/progress_dialog.dart';
@@ -32,7 +32,7 @@ class _RegisterState extends State<Register> {
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: <Widget>[
-                SizedBox(height: 20,),
+                SizedBox(height: 50,),
                 Text("SIGN UP",style: TextStyle(fontWeight: FontWeight.bold,fontSize: 22),),
                 SizedBox(height: 15,),
                 Text("Register Now And Get",style: TextStyle(color: Colors.black54),),

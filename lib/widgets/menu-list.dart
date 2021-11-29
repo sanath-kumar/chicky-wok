@@ -1,5 +1,5 @@
-import 'package:chickywok/providers/menu-provider.dart';
-import 'package:chickywok/screens/menu-detail.dart';
+import 'package:Chickywok/providers/menu-provider.dart';
+import 'package:Chickywok/screens/menu-detail.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
@@ -26,7 +26,7 @@ class _MenuListState extends State<MenuList> {
                       padding: EdgeInsets.all(10),
                       child: InkWell(
                         onTap: (){
-                          Navigator.pushNamed(context, '/details',arguments: MenuDetailArguments(name: menuItems.items[index].name,id: menuItems.items[index].sId,description: menuItems.items[index].description,price: menuItems.items[index].mrp,thumbnail: menuItems.items[index].thumbnail));
+                          Navigator.pushNamed(context, '/details',arguments: MenuDetailArguments(name: menuItems.items[index].name,id: menuItems.items[index].sId,description: menuItems.items[index].description,price: menuItems.items[index].mrp.toString(),thumbnail: menuItems.items[index].featuredImage));
                         },
                         child: Container(
                           decoration: BoxDecoration(
@@ -38,7 +38,7 @@ class _MenuListState extends State<MenuList> {
                             children: <Widget>[
                               Hero(
                                 tag : menuItems.items[index].sId,
-                                child: Image.network(menuItems.items[index].thumbnail,width: double.infinity,height: 120,),
+                                child: Image.network(menuItems.items[index].featuredImage,width: double.infinity,height: 120,),
                               ),
                               SizedBox(height: 15,),
                               Container(padding:EdgeInsets.only(left: 10,right: 10),child: Text(menuItems.items[index].name,textAlign:TextAlign.center,style: TextStyle(color: Colors.black,),)),
@@ -49,7 +49,7 @@ class _MenuListState extends State<MenuList> {
                                   borderRadius: BorderRadius.all(Radius.circular(30)),
                                 ),
                                 padding: EdgeInsets.fromLTRB(30, 6, 30, 6),
-                                child: Text("\u20B9 "+" "+menuItems.items[index].mrp,style: TextStyle(fontWeight: FontWeight.bold,color: Colors.red[100]),),
+                                child: Text("\u20B9 "+" "+menuItems.items[index].mrp.toString(),style: TextStyle(fontWeight: FontWeight.bold,color: Colors.red[100]),),
                               )
 
                             ],

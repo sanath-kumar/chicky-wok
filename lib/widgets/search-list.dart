@@ -1,5 +1,5 @@
-import 'package:chickywok/providers/menu-provider.dart';
-import 'package:chickywok/screens/menu-detail.dart';
+import 'package:Chickywok/providers/menu-provider.dart';
+import 'package:Chickywok/screens/menu-detail.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
@@ -25,7 +25,7 @@ class _SearchListState extends State<SearchList> {
                         padding: EdgeInsets.all(10),
                         child: InkWell(
                           onTap: (){
-                            Navigator.pushNamed(context, '/details',arguments: MenuDetailArguments(name: menuItems.filteredItems[index].name,id: menuItems.filteredItems[index].sId,description: menuItems.filteredItems[index].description,price: menuItems.filteredItems[index].mrp,thumbnail: menuItems.filteredItems[index].thumbnail));
+                            Navigator.pushNamed(context, '/details',arguments: MenuDetailArguments(name: menuItems.filteredItems[index].name,id: menuItems.filteredItems[index].sId,description: menuItems.filteredItems[index].description,price: menuItems.filteredItems[index].mrp.toString(),thumbnail: menuItems.filteredItems[index].featuredImage));
                           },
                           child: Container(
                             decoration: BoxDecoration(
@@ -37,7 +37,7 @@ class _SearchListState extends State<SearchList> {
                               children: <Widget>[
                                 Hero(
                                   tag : menuItems.filteredItems[index].sId,
-                                  child: Image.network(menuItems.filteredItems[index].thumbnail,width: double.infinity,height: 130,),
+                                  child: Image.network(menuItems.filteredItems[index].featuredImage,width: double.infinity,height: 130,),
                                 ),
                                 SizedBox(height: 15,),
                                 Text(menuItems.filteredItems[index].name,style: TextStyle(color: Colors.black),),
@@ -48,7 +48,7 @@ class _SearchListState extends State<SearchList> {
                                     borderRadius: BorderRadius.all(Radius.circular(30)),
                                   ),
                                   padding: EdgeInsets.fromLTRB(30, 6, 30, 6),
-                                  child: Text("\u20B9 "+" "+menuItems.filteredItems[index].mrp,style: TextStyle(fontWeight: FontWeight.bold,color: Colors.red[100]),),
+                                  child: Text("\u20B9 "+" "+menuItems.filteredItems[index].mrp.toString(),style: TextStyle(fontWeight: FontWeight.bold,color: Colors.red[100]),),
                                 )
 
                               ],

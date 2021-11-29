@@ -1,4 +1,4 @@
-import 'package:chickywok/providers/cart-provider.dart';
+import 'package:Chickywok/providers/cart-provider.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:shimmer/shimmer.dart';
@@ -30,12 +30,14 @@ class TopBar extends StatelessWidget implements PreferredSizeWidget {
                       Navigator.pop(context);
                     },child: Icon(Icons.navigate_before,size: 40)),
                     if(home) Container(
-                      padding: EdgeInsets.only(top: 20),
-                      child: Column(
-                        crossAxisAlignment: CrossAxisAlignment.start,
+                      padding: EdgeInsets.only(top: 0),
+                      child: Row(
+                        crossAxisAlignment: CrossAxisAlignment.center,
                         children: <Widget>[
-                          Text("Chicky Wok",style: TextStyle(fontWeight: FontWeight.bold,fontSize: 24),),
-                          Text("My Tasty Choice",style: TextStyle(fontSize: 10,color: Colors.grey),),
+                          Image.asset('assets/icon.png',width: 32,),
+                          SizedBox(width: 10,),
+                          Text("CHICKY WOK",style: TextStyle(fontWeight: FontWeight.bold,fontSize:15),),
+//                          Text("My Tasty Choice",style: TextStyle(fontSize: 10,color: Colors.grey),),
                         ],
 //
 
@@ -49,10 +51,6 @@ class TopBar extends StatelessWidget implements PreferredSizeWidget {
                         Text("\u20B9",style: TextStyle(fontSize: 16,fontWeight: FontWeight.bold,color: Colors.red),),
                         SizedBox(width: 5,),
                         Text(cartProvider.total.toStringAsFixed(2),style: TextStyle(fontSize: 16,fontWeight: FontWeight.bold),),
-
-
-
-
                       ],
                     )
 

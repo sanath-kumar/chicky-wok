@@ -8,9 +8,8 @@ class Carousel extends StatefulWidget {
 
 class _CarouselState extends State<Carousel> {
   static final List<String> imgList = [
-    'https://chicky-wok-bh.s3.ap-south-1.amazonaws.com/carousel/001.jpg',
-
-
+    'assets/banner.png',
+    'assets/banner.png',
 
   ];
   final List<Widget> imageSliders = imgList.map((item) => Container(
@@ -20,22 +19,12 @@ class _CarouselState extends State<Carousel> {
           borderRadius: BorderRadius.all(Radius.circular(5.0)),
           child: Stack(
             children: <Widget>[
-              Image.network(item, fit: BoxFit.cover, width: 1000.0),
+              Image.asset(item, fit: BoxFit.cover, width: 1000.0),
               Positioned(
                 bottom: 0.0,
                 left: 0.0,
                 right: 0.0,
                 child: Container(
-//                  decoration: BoxDecoration(
-//                    gradient: LinearGradient(
-//                      colors: [
-//                        Color.fromARGB(200, 0, 0, 0),
-//                        Color.fromARGB(0, 0, 0, 0)
-//                      ],
-//                      begin: Alignment.bottomCenter,
-//                      end: Alignment.topCenter,
-//                    ),
-//                  ),
                   padding: EdgeInsets.symmetric(vertical: 10.0, horizontal: 20.0),
                 ),
               ),

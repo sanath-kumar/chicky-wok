@@ -1,7 +1,7 @@
 import 'dart:async';
 
-import 'package:chickywok/widgets/app-navigation.dart';
-import 'package:chickywok/widgets/bottom-navigation.dart';
+import 'package:Chickywok/widgets/app-navigation.dart';
+import 'package:Chickywok/widgets/bottom-navigation.dart';
 import 'package:flutter/material.dart';
 import 'package:geolocator/geolocator.dart';
 import 'package:google_maps_flutter/google_maps_flutter.dart';
@@ -21,9 +21,20 @@ class _LocateStoreState extends State<LocateStore> {
     return Scaffold(
       appBar: TopBar(false),
       bottomNavigationBar: BottomNavigation(),
+      floatingActionButton: FloatingActionButton.extended(
+
+        onPressed: () {
+          Navigator.pushNamed(context, "/outlets");
+        },
+        label: Text('View All'),
+        icon: Icon(Icons.list_alt),
+        backgroundColor: Colors.pink,
+
+      ),
       body: Container(
         child: Column(
           children: <Widget>[
+
             Expanded(
               child: GoogleMap(
                   mapType: MapType.normal,

@@ -1,44 +1,44 @@
-class MenuItems{
+class MenuItems {
   String sId;
   String name;
+  String featuredImage;
+  String category;
+  int mrp;
+  String flag;
+  int sellingPrice;
   String description;
-  String mrp;
-  String offerPrice;
-  String country;
-  String thumbnail;
-  int iV;
 
   MenuItems(
-      { this.sId,
+      {this.sId,
         this.name,
-        this.description,
+        this.featuredImage,
+        this.category,
         this.mrp,
-        this.offerPrice,
-        this.country,
-        this.thumbnail,
-        this.iV});
+        this.flag,
+        this.sellingPrice,
+        this.description});
 
   MenuItems.fromJson(Map<String, dynamic> json) {
     sId = json['_id'];
     name = json['name'];
-    description = json['description'];
+    featuredImage = json['featured_image'];
+    category = json['category'];
     mrp = json['mrp'];
-    offerPrice = json['offer_price'];
-    country = json['country'];
-    thumbnail = json['thumbnail'];
-    iV = json['__v'];
+    flag = json['flag'];
+    sellingPrice = json['selling_price'];
+    description = json['description'];
   }
 
   Map<String, dynamic> toJson() {
     final Map<String, dynamic> data = new Map<String, dynamic>();
     data['_id'] = this.sId;
     data['name'] = this.name;
-    data['description'] = this.description;
+    data['featured_image'] = this.featuredImage;
+    data['category'] = this.category;
     data['mrp'] = this.mrp;
-    data['offer_price'] = this.offerPrice;
-    data['country'] = this.country;
-    data['thumbnail'] = this.thumbnail;
-    data['__v'] = this.iV;
+    data['flag'] = this.flag;
+    data['selling_price'] = this.sellingPrice;
+    data['description'] = this.description;
     return data;
   }
 }

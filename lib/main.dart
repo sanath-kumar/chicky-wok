@@ -1,23 +1,24 @@
-import 'package:chickywok/providers/cart-provider.dart';
-import 'package:chickywok/providers/menu-provider.dart';
-import 'package:chickywok/screens/Search.dart';
-import 'package:chickywok/screens/cart.dart';
-import 'package:chickywok/screens/checkout.dart';
-import 'package:chickywok/screens/confirm-checkout.dart';
-import 'package:chickywok/screens/confirm-registration.dart';
-import 'package:chickywok/screens/home-page.dart';
-import 'package:chickywok/screens/locate-store.dart';
-import 'package:chickywok/screens/login.dart';
-import 'package:chickywok/screens/menu-detail.dart';
-import 'package:chickywok/screens/menu.dart';
-import 'package:chickywok/screens/my-account.dart';
-import 'package:chickywok/screens/payments.dart';
-import 'package:chickywok/screens/register.dart';
-import 'package:chickywok/screens/registration-complete.dart';
-import 'package:chickywok/screens/select-country.dart';
-import 'package:chickywok/screens/splashscreen.dart';
-import 'package:chickywok/screens/welcome.dart';
-import 'package:chickywok/widgets/locate-me.dart';
+import 'package:Chickywok/providers/cart-provider.dart';
+import 'package:Chickywok/providers/menu-provider.dart';
+import 'package:Chickywok/screens/Search.dart';
+import 'package:Chickywok/screens/cart.dart';
+import 'package:Chickywok/screens/checkout.dart';
+import 'package:Chickywok/screens/confirm-checkout.dart';
+import 'package:Chickywok/screens/confirm-registration.dart';
+import 'package:Chickywok/screens/home-page.dart';
+import 'package:Chickywok/screens/locate-store.dart';
+import 'package:Chickywok/screens/login.dart';
+import 'package:Chickywok/screens/menu-detail.dart';
+import 'package:Chickywok/screens/menu.dart';
+import 'package:Chickywok/screens/my-account.dart';
+import 'package:Chickywok/screens/outlets.dart';
+import 'package:Chickywok/screens/payments.dart';
+import 'package:Chickywok/screens/register.dart';
+import 'package:Chickywok/screens/registration-complete.dart';
+import 'package:Chickywok/screens/select-country.dart';
+import 'package:Chickywok/screens/splashscreen.dart';
+import 'package:Chickywok/screens/welcome.dart';
+import 'package:Chickywok/widgets/locate-me.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:provider/provider.dart';
@@ -54,7 +55,7 @@ class MyApp extends StatelessWidget {
           '/home' : (context) => Menu(),
           '/details' : (context) => MenuDetail(),
           '/cart' : (context) => Cart(),
-          '/outlets' : (context)=> LocateStore(),
+          '/locate-store' : (context)=> LocateStore(),
           '/checkout' : (context) => Checkout(),
           '/login' : (context) => Login(),
           '/payment' : (context) => Payments(),
@@ -64,6 +65,7 @@ class MyApp extends StatelessWidget {
           '/registration-confirmation' : (context) => RegistrationComplete(),
           '/my-account' : (context) => MyAccount(),
           '/confirm-registration' : (context) => ConfirmRegistration(),
+          '/outlets' : (context) => Outlets()
         },
 
       ),

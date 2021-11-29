@@ -11,7 +11,10 @@ import 'package:Chickywok/screens/login.dart';
 import 'package:Chickywok/screens/menu-detail.dart';
 import 'package:Chickywok/screens/menu.dart';
 import 'package:Chickywok/screens/my-account.dart';
+<<<<<<< HEAD
 import 'package:Chickywok/screens/outlets.dart';
+=======
+>>>>>>> 646e9026a812406db75c75825f448231cc178384
 import 'package:Chickywok/screens/payments.dart';
 import 'package:Chickywok/screens/register.dart';
 import 'package:Chickywok/screens/registration-complete.dart';
